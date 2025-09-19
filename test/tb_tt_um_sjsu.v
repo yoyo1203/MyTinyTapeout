@@ -1,6 +1,6 @@
 `timescale 1ns / 1ns
 
-module tb_bouncing_square;
+module tb_tt_um_sjsu;
 
   // Testbench signals
   reg clk;
