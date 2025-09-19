@@ -1,9 +1,24 @@
-# info.yaml
-name: "SJSU VGA Bouncing Logo"
-description: "A VGA demo with a bouncing SJSU bitmap logo and background patterns."
-author: "Your Name"
-license: "Apache-2.0"
-source: "src/tt_um_sjsu.v"
-testbench: "test/tb_tt_um_sjsu.v"
-top_module: "tt_um_sjsu"
+---
+# TinyTapeout project information
+project:
+  id: um_sjsu # The unique project ID
+  name: tt_um_sjsu
+  description: SJSU Bouncing Square VGA Demo
+
+# Source files
+source_files:
+  - src/tt_um_sjsu.v
+
+# The top level module name
+top_module: tt_um_sjsu
+
+# Number of IOs
+# 8 input, 8 output, 8 bidirectional
+# Make sure your top module matches this
+# ui_in, uo_out, uio_in, uio_out
+specs:
+  ui_in: 8
+  uo_out: 8
+  uio_in: 8
+  uio_out: 8
 
