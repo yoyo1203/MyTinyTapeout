@@ -1,7 +1,9 @@
-project_name: "SJSU VGA Bouncing Logo"
+# info.yaml
+name: "SJSU VGA Bouncing Logo"
+description: "A VGA demo with a bouncing SJSU bitmap logo and background patterns."
 author: "Your Name"
-description: "VGA demo with bouncing SJSU logo, background pattern, and color inversion."
+license: "Apache-2.0"
+source: "src/tt_um_sjsu.v"
+testbench: "test/tb_tt_um_sjsu.v"
 top_module: "tt_um_sjsu"
-source_files:
-  - "src/tt_um_sjsu.v"
-  - "src/hvsync_generator.v"
+
